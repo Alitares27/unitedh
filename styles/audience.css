@@ -1,0 +1,117 @@
+header,footer{
+    width: 100%;
+    background-color: firebrick;
+    color: white;
+    text-align: center;
+}
+#logo{
+    width: 100px;
+}
+.nav-link{
+    display:inline-block ;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.nav-link:hover{
+    background: darkgoldenrod;
+    color: firebrick;
+}
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+.container h4{
+    font-size: 30px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.container p{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.column{
+    border:1px solid #000000 ;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(169, 169, 169, 0.5);
+    width: 40%;
+    box-sizing:border-box ;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.scenario,.audience{
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+}
+.audience-detail{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 10px ;
+}
+ul{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+li{
+    padding: 10px;
+}
+@media (max-width:400px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-link{
+        margin: 10px 0px;
+    }
+    .people1,.people2{
+        max-width: 320px;
+    }
+    .container{
+        margin: 0 auto;
+        max-width: 380px;
+        display: none;
+    }
+}
+@media (max-width:550px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .column{
+        width:auto ;
+        margin-bottom: 20px;
+    }
+    .scenario{
+        width: auto;
+        margin: 0 auto;
+    }
+    .account-img, .drive-img{
+        width: 100px;
+    }
+}
+@media(min-width: 551px){
+    .column{
+        width:45% ;
+        margin-bottom: 20px;
+    }
+    ul{
+        width: auto;
+        margin: 0 auto;
+    }
+    .account-img, .drive-img{
+        width: 200px;
+    }
+}
