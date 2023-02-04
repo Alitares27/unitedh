@@ -1,11 +1,21 @@
 header,footer{
     width: 100%;
-    background-color:dodgerblue;
+    background-color:#001832;
     color: white;
     text-align: center;
 }
-#logo{
-    width: 120px;
+footer{
+    padding: 2%;
+}
+.logo{
+    width: 20%;
+    transition: transform .2s; 
+    position: relative;
+    top: 20px;
+
+}
+.logo:hover {
+        transform: scale(1.2); 
 }
 .nav-link{
     display:inline-block ;
@@ -18,14 +28,14 @@ header,footer{
 .nav-link:hover{
     background:gainsboro;
     color: black;
-    
+    transform: scale(1.2);
 }
 nav{
     padding: 0px;
     display: block;
     justify-content: space-around;
 }
-.container img{
+.background{
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -48,20 +58,84 @@ nav{
     position: absolute;
     top: 45%;
     left: 5%;
-    
+}
+.contact{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    position: fixed;
+    top:80%;
+    left: 80%;
+    background-color: #002d5f;
+    border-radius: 2em;
+    width: 15%;
+    padding: 20px;
+}
+.wsp{
+    top: 12%;
+    grid-column-start: 2;
+    width: 70%;
+   position: absolute;
+}
+.contact:hover{
+    transform: scale(1.2);
+
+}
+.wsp-text{
+    grid-column-start: 1;
+    color: gainsboro;
+    font-size: 1.8em;
+    text-align: center;
+    text-decoration: none;
 }
 .block2{
     max-width: 900px;
     text-align: center;
     margin: 0 auto;
+    background-color: #002d5f;
+    color: gainsboro;
+    padding: 2% 1%;
 }
 .block2 h2{
     font-family: 'Cinzel Decorative', cursive;
     font-size: 35px;
 }
+.block2 h2:hover{
+    transform: scale(1.5);
+}
 .block2 p{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+}
+
+.bigbox{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 2%;
+    row-gap: 2%;
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+}
+.bigbox p{
+    font-family: 'Montserrat', sans-serif;
+}
+.bigbox h1{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 900;
+}
+button{
+    width: 50%;
+    background-color:#001832;
+    border-color: transparent;
+    border-radius: 10px;
+    color: gainsboro;
+    font-size: 20px;
+}
+button:hover {
+    transform: scale(1.4); 
 }
 
 @media (max-width:550px){
