@@ -9,13 +9,10 @@ footer{
 }
 .logo{
     width: 20%;
-    transition: transform .2s; 
+    transition: transform 0.2s; 
     position: relative;
     top: 20px;
 
-}
-.logo:hover {
-        transform: scale(1.2); 
 }
 .nav-link{
     display:inline-block ;
