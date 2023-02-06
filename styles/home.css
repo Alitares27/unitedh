@@ -29,6 +29,7 @@ footer{
     background:gainsboro;
     color: black;
     transform: scale(1.2);
+    transition: 0.9s;
 }
 nav{
     padding: 0px;
@@ -77,6 +78,7 @@ nav{
    position: absolute;
 }
 .contact:hover{
+    transition: 0.9s;
     transform: scale(1.2);
 
 }
